@@ -9,10 +9,9 @@ export const checkIfUserIsAdminMiddleware = async (req: Request, res: Response, 
   const paramsUserId = Number(req.params.id)
   if (authtenticatedAdmin === true) {
     return next()
-  } else {
-    if ((req.method === "PATCH") && userId === paramsUserId){
+  } else if (req.method === "PATCH" && userId === paramsUserId){
       return next()
+    } else {
+      throw new AppError("Insufficient permission", 403)
     }
-    throw new AppError("Insufficient permission", 403)
-  }
 }
