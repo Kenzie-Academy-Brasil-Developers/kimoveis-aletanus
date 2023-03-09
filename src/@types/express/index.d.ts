@@ -6,15 +6,7 @@ declare global {
         interface Request{
             user: {
                 id: number,
-                admin: boolean,
-                // id: number,
-                // name?: string,
-                // email?: string,
-                // password?: string,
-                // admin: boolean,
-                // createdAt?: string,
-                // updatedAt?: string,
-                // deletedAt?: string
+                admin: boolean
             }
         }
     }

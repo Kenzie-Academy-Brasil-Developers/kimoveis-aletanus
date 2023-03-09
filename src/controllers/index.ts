@@ -1,3 +1,3 @@
-import { createUserControllers } from "./user/user.controllers"
+import { createUserController } from "./user/user.controllers"
 
-export { createUserControllers }
+export { createUserController }
