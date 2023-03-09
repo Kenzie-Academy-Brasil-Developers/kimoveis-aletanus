@@ -1,9 +1,8 @@
-import { Repository } from "typeorm";
-import { AppDataSource } from "../../data-source";
-import { Category } from "../../entities";
-import { ICategory, IReturnCategory } from "../../interfaces/category.interfaces";
-import { categorySchema } from "../../schemas/category.schemas";
-
+import { Repository } from "typeorm"
+import { AppDataSource } from "../../data-source"
+import { Category } from "../../entities"
+import { ICategory, IReturnCategory } from "../../interfaces/category.interfaces"
+import { categorySchema } from "../../schemas/category.schemas"
 
 export const postCategoryService = async (categoryData: ICategory): Promise<IReturnCategory> => {
 

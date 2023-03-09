@@ -2,30 +2,32 @@ import { getRounds, hashSync } from "bcryptjs"
 import { BeforeInsert, BeforeUpdate, Column, CreateDateColumn, DeleteDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm"
 
 @Entity("users")
+
 export class User {
+  
   @PrimaryGeneratedColumn("increment")
-  id: number;
+  id: number
 
   @Column({ type: "varchar", length: 45 })
-  name: string;
+  name: string
 
   @Column({ type: "varchar", unique: true, length: 100 })
-  email: string;
+  email: string
 
   @Column({ type: "boolean", default: false })
-  admin: boolean;
+  admin: boolean
 
   @Column({ type: "varchar", length: 120 })
-  password: string;
+  password: string
 
   @CreateDateColumn({type:"date"})
-  createdAt: string;
+  createdAt: string
 
   @UpdateDateColumn({type:"date"})
-  updatedAt: string;
+  updatedAt: string
 
   @DeleteDateColumn({type:"date"})
-  deletedAt: string;
+  deletedAt: string
 
   @BeforeInsert()
   @BeforeUpdate()
