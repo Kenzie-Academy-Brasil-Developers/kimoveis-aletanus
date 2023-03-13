@@ -12,7 +12,6 @@ export const loginUserService = async (loginData: ILogin): Promise<string> => {
     const user: User | null = await userRepo.findOneBy({
         email: loginData.email 
     })
-
     if (!user) {
         throw new AppError("Invalid credentials", 401)
     }

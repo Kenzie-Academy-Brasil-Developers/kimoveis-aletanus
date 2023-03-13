@@ -1,4 +1,3 @@
-
 import { Router } from 'express'
 import { loginUserController } from '../controllers/user/user.controllers'
 import { validateBodyMiddleware } from '../middlewares/users/validateBody'

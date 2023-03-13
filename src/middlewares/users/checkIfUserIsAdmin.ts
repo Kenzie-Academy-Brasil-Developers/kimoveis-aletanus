@@ -1,7 +1,6 @@
 import { Request, Response, NextFunction } from "express"
 import { AppError } from "../../errors"
  
-
 export const checkIfUserIsAdminMiddleware = async (req: Request, res: Response, next: NextFunction): Promise<Response | void> => {
     
   const authtenticatedAdmin = req.user.admin

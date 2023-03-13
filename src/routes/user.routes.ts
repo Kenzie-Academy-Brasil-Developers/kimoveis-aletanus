@@ -22,17 +22,17 @@ UsersRoutes.get( "",
 )
 
 UsersRoutes.patch("/:id",
+    checkUserByIdMiddleWare,
     validateTokenMiddleware,
     checkIfUserIsAdminMiddleware,
-    checkUserByIdMiddleWare,
     validateBodyMiddleware(updateUserSchema),
     checkIfEmailAlreadyExistsMiddleware,
     patchUserController
 )
 
 UsersRoutes.delete("/:id",
+    checkUserByIdMiddleWare,
     validateTokenMiddleware,
     checkIfUserIsAdminMiddleware,
-    checkUserByIdMiddleWare,
     deleteUserController
 )
