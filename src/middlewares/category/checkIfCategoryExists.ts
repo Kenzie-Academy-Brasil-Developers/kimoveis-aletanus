@@ -6,11 +6,11 @@ import { AppError } from "../../errors"
 export const checkIfCategoryExistsMiddleware = async (req: Request, res: Response, next: NextFunction): Promise<Response | void> => {
 
     const categoryName: string = req.body.name
-    const userRepo = AppDataSource.getRepository(Category)
-    const user = await userRepo.findOneBy({ 
+    const categoryRepo = AppDataSource.getRepository(Category)
+    const category = await categoryRepo.findOneBy({ 
         name: categoryName
     })
-    if (user) {
+    if (category) {
         throw new AppError("Category already exists", 409)
     }
     return next()

@@ -6,10 +6,10 @@ import { AppError } from "../../errors"
 
 export const checkIfEmailAlreadyExistsMiddleware = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
 
-  const UseRepository: Repository<User> = AppDataSource.getRepository(User)
+  const UserRepository: Repository<User> = AppDataSource.getRepository(User)
   const email: string = req.body.email
   if (email) {
-    const checkEmail: User | null = await UseRepository.findOne({
+    const checkEmail: User | null = await UserRepository.findOne({
       where: {
         email: email,
       },
