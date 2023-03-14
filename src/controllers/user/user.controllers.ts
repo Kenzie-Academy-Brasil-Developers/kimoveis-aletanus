@@ -14,7 +14,7 @@ export const loginUserController = async (req: Request, res: Response): Promise<
 
 }
 
-export const createUserController = async (req: Request, res: Response) => {
+export const createUserController = async (req: Request, res: Response): Promise<Response> => {
   
     const userData: ICreateUser = req.body
     const newUser = await createUserService(userData)
@@ -27,7 +27,7 @@ export const getUsersController = async (req: Request, res: Response): Promise<R
     return res.status(200).json(usersList)
 }
 
-export const patchUserController = async (req: Request, res: Response) => {
+export const patchUserController = async (req: Request, res: Response): Promise<Response> => {
 
     const userId: number = Number(req.params.id)
     const updatedUser = await patchUserService(req.body, userId)

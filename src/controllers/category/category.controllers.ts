@@ -10,13 +10,13 @@ export const postCategoryController = async (req: Request, res: Response): Promi
     return res.status(201).json(newCategory)
 }
 
-export const getCategoriesListController = async (req: Request, res: Response) => {
+export const getCategoriesListController = async (req: Request, res: Response): Promise<Response> => {
 
     const categoriesList: Array<ICategory> = await getCategoriesListService()
     return res.status(200).json(categoriesList)
 }
 
-export const getRealStatesByCategoryController = async (req: Request, res: Response) => {
+export const getRealStatesByCategoryController = async (req: Request, res: Response): Promise<Response> => {
 
     const categoryId: number = Number(req.params.id)
     const realState = await getRealStatesByCategoryService(categoryId)

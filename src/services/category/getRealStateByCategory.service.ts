@@ -3,7 +3,6 @@ import { AppDataSource } from "../../data-source"
 import { Category } from "../../entities"
 import { AppError } from "../../errors"
 
-
 export const getRealStatesByCategoryService = async (categoryId: number): Promise<Category> => {
 
     const categoryRepo: Repository<Category> = AppDataSource.getRepository(Category)

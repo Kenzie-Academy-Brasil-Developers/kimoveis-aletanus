@@ -4,7 +4,7 @@ import { ICreateSchedule } from "../../interfaces/schedule.interfaces"
 import { createScheduleService } from "../../services/schedule/createSchedule.service"
 import { getAllSchedulesForARealEstateService } from "../../services/schedule/getAllSchedulesForARealEstate.service"
 
-export const createScheduleController = async (req: Request, res: Response) => {
+export const createScheduleController = async (req: Request, res: Response): Promise<Response> => {
 
     const scheduleData: ICreateSchedule = req.body
     const userId: number = Number(req.user.id)
@@ -12,7 +12,7 @@ export const createScheduleController = async (req: Request, res: Response) => {
     return res.status(201).json({ message: "Schedule created" })
 }
 
-export const getAllSchedulesForARealStateController = async (req: Request, res: Response) => {
+export const getAllSchedulesForARealStateController = async (req: Request, res: Response): Promise<Response> => {
 
     const realEstateId: number = Number(req.params.id)
     const schedules: RealEstate = await getAllSchedulesForARealEstateService(realEstateId)
