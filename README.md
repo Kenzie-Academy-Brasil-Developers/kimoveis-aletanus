@@ -62,7 +62,8 @@ The system architecture is based on a series of entities. For example, user, cat
 
 A significant challenge in application development is ensuring that your code is free of errors and bugs. This project has been fully tested and approved according to Node Express unit tests with Jest, also contained in this repository. The focus of these tests was not only to validate the proper functioning of the routes, according to what is expected of each one, but also to test the various parts of the application such as the services, controllers, and middleware developed.
 
-![image](https://user-images.githubusercontent.com/106698505/225432191-3e5c7a82-9d05-4b58-be85-f6304eec03d4.png)
+![image](https://user-images.githubusercontent.com/106698505/225432374-9cb8b5d1-4c65-4a35-babe-fe3dcce2238a.png)
+
 
 
 
