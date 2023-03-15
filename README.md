@@ -7,10 +7,16 @@ For those who work in the real estate sector, it can be challenging to keep trac
 <h4>ABOUT THE SYSTEM</h4>
 
 KIMOVEIS was developed to facilitate real estate management and allows creating, updating, listing, and deleting users, properties, property categories, as well as scheduling visits to registered properties. The system is based on the use of technologies such as Express.js, TypeORM, PostgreSQL, bcrypt.js, dotenv, pg, reflect-metadata, zod, express-async-errors, and JWT, ensuring a secure, reliable, and scalable environment.
+
 This system can be used by both the clients of a real estate agency and its administrators, with specific routes and permissions for common users to register and schedule visits, as well as granting full access and management of information such as users, properties, and scheduled visits to system administrators.
+
 All users are authenticated with JWT, and their passwords are encrypted with bcrypt.js. The routes also have some validation restrictions, such as the inability to register two users or properties with the same email/address and the inability to schedule visits outside business hours and on non-working days.
+
 The system architecture is based on a series of entities. For example, user, category, property, and scheduling entities, each with its own table and specific properties stored in the database.
-TESTED AND APPROVED SYSTEM A significant challenge in application development is ensuring that your code is free of errors and bugs. This project has been fully tested and approved according to Node Express unit tests with Jest, also contained in this repository. The focus of these tests was not only to validate the proper functioning of the routes, according to what is expected of each one, but also to test the various parts of the application such as the services, controllers, and middleware developed.
+
+TESTED AND APPROVED SYSTEM
+
+A significant challenge in application development is ensuring that your code is free of errors and bugs. This project has been fully tested and approved according to Node Express unit tests with Jest, also contained in this repository. The focus of these tests was not only to validate the proper functioning of the routes, according to what is expected of each one, but also to test the various parts of the application such as the services, controllers, and middleware developed.
 
 <h4>TECHNICAL FEATURES</h4>
 
