@@ -14,10 +14,6 @@ All users are authenticated with JWT, and their passwords are encrypted with bcr
 
 The system architecture is based on a series of entities. For example, user, category, property, and scheduling entities, each with its own table and specific properties stored in the database.
 
-<h4>SYSTEM TESTED AND APPROVED</h4>
-
-A significant challenge in application development is ensuring that your code is free of errors and bugs. This project has been fully tested and approved according to Node Express unit tests with Jest, also contained in this repository. The focus of these tests was not only to validate the proper functioning of the routes, according to what is expected of each one, but also to test the various parts of the application such as the services, controllers, and middleware developed.
-
 <h4>TECHNICAL FEATURES</h4>
 
 •	Relations made with TypeORM
@@ -62,7 +58,9 @@ A significant challenge in application development is ensuring that your code is
   
   .env.example is included in the repository.
 
+<h4>SYSTEM TESTED AND APPROVED</h4>
 
+A significant challenge in application development is ensuring that your code is free of errors and bugs. This project has been fully tested and approved according to Node Express unit tests with Jest, also contained in this repository. The focus of these tests was not only to validate the proper functioning of the routes, according to what is expected of each one, but also to test the various parts of the application such as the services, controllers, and middleware developed.
 
 ![image](https://user-images.githubusercontent.com/106698505/225429064-6e954643-2170-4c8a-a40d-eb46eb83e090.png)
 
