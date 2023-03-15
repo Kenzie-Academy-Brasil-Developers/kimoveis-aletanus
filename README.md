@@ -14,24 +14,33 @@ TESTED AND APPROVED SYSTEM A significant challenge in application development is
 
 <h4>TECHNICAL FEATURES</h4>
 
-•	Relations made with TypeORM 
+•	Relations made with TypeORM
+
 •	Search methods findOne and findOneBy, specific to TypeORM.
+
 •	QueryBuilder
   Validation queries using queryBuilder.
+  
 •	Types
   All data and functions have been typed correctly.
+  
 •	Serialization
   Data serialization done with zod and using a data validation middleware.
+  
 •	Package.json
   All package.json settings are correctly configured.
   All necessary libraries for project execution are listed in package.json.
+  
 •	Error handling
   Error handling using a custom AppError class.
   Zod errors are handled in the global error handling function.
+  
 •	Function and variable naming
   Function and variable naming was performed in a clear and objective way.
+  
 •	Indentation
   Correct indentation.
+  
 •	Environment variables
   Environment variables for necessary configurations.
   .env.example is included in the repository.
