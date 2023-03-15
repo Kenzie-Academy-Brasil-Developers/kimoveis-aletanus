@@ -2,7 +2,7 @@
 
 <h4>MAIN OBJECTIVES</h4>
 
-KIMOVEIS - Real Estate Management System For those who work in the real estate sector, it can be challenging to keep track of paperwork, deadlines, property visits, and ongoing negotiations. KIMOVEIS is a real estate management system that aims to make all these tasks much simpler and more organized.
+Real Estate Management System For those who work in the real estate sector, it can be challenging to keep track of paperwork, deadlines, property visits, and ongoing negotiations. KIMOVEIS is a real estate management system that aims to make all these tasks much simpler and more organized.
 
 <h4>ABOUT THE SYSTEM</h4>
 
