@@ -1,4 +1,4 @@
-# KIMOVEIS - Real Estate Management System
+# KIMOVEIS - A Real Estate Management System
 
 <h4>MAIN OBJECTIVES</h4>
 
